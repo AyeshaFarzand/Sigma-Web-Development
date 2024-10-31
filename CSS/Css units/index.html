@@ -1,0 +1,86 @@
+Specificity & Casecade
+<!-- 
+     https://www.codewithharry.com/tutorial/css-specificity/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+
+            border: 2px solid black;
+            box-sizing: border-box;
+            /* width: 1536px; */
+            /* width:100vw; */
+            Height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+        }
+        /* html is a root element */
+        html{
+            font-size: 12px;
+        }
+
+        .container {
+
+            border: 2px solid black;
+            box-sizing: border-box;
+             /* px=196th inch */
+            /* width: 1536px; */
+           
+            /* vw=view port width */
+            /* width:100vw; */
+
+            /* vh=view port height */ 
+             height: 80vh; 
+            margin: 23px auto;
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+        .container p{
+            /* jtna font size isy mlne wala tha us me em lgane ka mtlb ye ha ky utne guna zda hu jae ga size jese yha 2 lgya tu 2 guna zda hu jae ga size */
+            /* font-size: 2em; */
+            /* jtna root ko mlne wla tha font size us se 2 guna zda de do */
+            font-size: 2rem;
+            
+        }
+        .mycont{
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-color: brown;
+            color: beige;
+            font-size: 22px;
+            /* Vmin & Vmax */
+            width: 100vmin;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad eaque deleniti impedit veniam voluptatibus
+            fugit iure sit voluptas excepturi modi soluta adipisci ducimus doloremque, nemo placeat cum laborum molestiae
+            atque quidem quo accusamus pariatur dolorem. Cupiditate eum rem fugiat impedit? Ullam modi, voluptas obcaecati
+            eum, velit quos laboriosam asperiores in quisquam quas ipsa? Quos, in.
+        </p>
+        
+    </div>
+    <div class="mycont">
+        I am another container
+    </div>
+</body>
+
+</html>

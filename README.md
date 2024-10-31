@@ -1,4 +1,4 @@
 # Sigma-Web-Development
-HTML
-CSS 
-JAVASCRIPT
+HTML5
+CSS3
+JavaScript

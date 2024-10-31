@@ -1,0 +1,28 @@
+p {
+    background-color: blue;
+    color: white;
+}
+
+div p:first-child {
+    background-color: yellow;
+    color: red;
+}
+
+a {
+    background-color: rgb(155, 204, 155);
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+#F23 {
+    background-color: aqua;
+}
+#F24 {
+    background-color: rgb(63, 70, 70);
+}
